@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insuco Chillán - Página Web</title>
+
+    <!-- Archivo CSS externo -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Bootstrap desde un CDN -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- jQuery desde un CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Archivo JavaScript externo -->
+    <script src="script.js" defer></script>
+</head>
+
+<body class="bg-light text-dark">
+    <!-- Barra de navegación -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Insuco Chillán</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#home">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#news">Noticias</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Carreras
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="#">Programación</a>
+                        <a class="dropdown-item" href="#">Administración Mención RRHH</a>
+                        <a class="dropdown-item" href="#">Administración Mención Logística</a>
+                        <a class="dropdown-item" href="#">Conectividad y Redes</a>
+                        <a class="dropdown-item" href="#">Contabilidad</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Imagen principal -->
+    <div class="text-center mt-4">
+        <img class="img-fluid rounded shadow my-4" src="https://insucochillan.cl/wp-content/uploads/2024/03/insuco-chillan.png" alt="Insuco Chillán Logo" style="width:25%;" />
+    </div>
+
+    <!-- Contenido principal -->
+    <div class="container text-center mt-5">
+        <h1 class="display-4 text-primary mb-4">Insuco Chillán</h1>
+        <p class="lead">Bienvenidos a nuestra página web Insuco.cl. Aquí encontrarás información sobre nuestros servicios educacionales.</p>
+
+        <!-- Lista de servicios -->
+        <ul class="list-group">
+            <li class="list-group-item" onclick="changeImageSource('Primero Medio', 'https://new-image-source.com/primero.jpg')">Primero Medio</li>
+            <li class="list-group-item" onclick="toggleImageDescription('Primero Medio')">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2AZFRn_4kbtMpdK89mQurAbsIZbZjAxwIVg&s" alt="Primero Medio" class="scroll-image">
+                <p class="description-Primero-Medio d-none">Esta es la descripción del Primero Medio.</p>
+            </li>
+            <li class="list-group-item">Segundo Medio</li>
+            <li class="list-group-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwc0_rIpled_Hn_Jv9JVk4mUCEsDmZQm9bpA&s" alt="Segundo Medio" class="scroll-image">
+            </li>
+            <li class="list-group-item">Tercero Medio</li>
+            <li class="list-group-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1Lke9wfVr4yLbwel04WsvzkhKNfyo7FFiMAvoGy1JdyZjHxs7qvgzKkeyZ8JLLG1Ah5U&usqp=CAU" alt="Tercero Medio" class="scroll-image">
+            </li>
+            <li class="list-group-item">Cuarto Medio</li>
+            <li class="list-group-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5fnP_19OgXj9Zyans4DyYV4S39yeq3IEbWq_tJ0mav5pWKxOpaKd8SCWPkQeggEGdm6A&usqp=CAU" alt="Cuarto Medio" class="scroll-image">
+            </li>
+        </ul>
+
+        <!-- Botón interactivo -->
+        <button id="alertButton" class="btn btn-primary mt-4">Haz clic aquí</button>
+
+        <!-- Selección de color de fondo -->
+        <div class="form-group mt-4">
+            <label for="colorSelect">Selecciona un color de fondo:</label>
+            <select class="form-control" id="colorSelect" onchange="changeBackgroundColor()">
+                <option value="light">Claro</option>
+                <option value="dark">Oscuro</option>
+                <option value="primary">Azul</option>
+            </select>
+        </div>
+    </div>
+
+    <!-- Scripts de Bootstrap y dependencias de JavaScript (CDN) -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,64 @@
+/* Estilos generales */
+body {
+    background-color: #f8f9fa;
+    color: #343a40;
+}
+
+.container {
+    margin-top: 50px;
+}
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Estilos para la lista de servicios */
+.list-group-item {
+    font-size: 1.2rem;
+    color: #495057;
+}
+
+/* Botón principal */
+#alertButton {
+    font-size: 1.1rem;
+    padding: 10px 20px;
+}
+
+/* Menú desplegable personalizado */
+.navbar-nav .dropdown-menu {
+    background-color: #f8f9fa;
+}
+
+.navbar-nav .dropdown-menu a {
+    color: #007bff;
+}
+
+.navbar-nav .dropdown-menu a:hover {
+    background-color: #007bff;
+    color: #fff;
+}
+
+/* Animación de imágenes en scroll */
+.scroll-image {
+    width: 100%;
+    height: auto;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.scroll-image.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Estilos para descripciones de imágenes */
+.description-Primero-Medio,
+.description-Segundo-Medio,
+.description-Tercero-Medio,
+.description-Cuarto-Medio {
+    margin-top: 10px;
+    font-size: 0.9rem;
+    color: #6c757d;
+}
